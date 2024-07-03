@@ -5,6 +5,7 @@ A powerful Python-based Telegram bot for scraping group members, adding members 
 - **Scrape Members**: Extract member information from Telegram groups and save it in a CSV file.
 - **Add Members**: Add members from a CSV file to another Telegram group.
 - **Send Mass Messages**: Send personalized messages to members listed in a CSV file.
+- **Auto Leave Groups**: Help leave groups automaticaly
 
 # Usage
 
