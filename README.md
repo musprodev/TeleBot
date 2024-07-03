@@ -28,8 +28,7 @@ To scrape members from a group, run the scraper.py script:
 ## Adding Members to a Group:
 - Ensure you have a CSV file with member details (scraped using `scraper.py`).
 - Run the `add2group.py` script
-```python add2group.py members.csv
-```
+```python add2group.py members.csv```
 - Follow the prompts to select the target group and add members by user ID or username.
 
 ## Sending Mass Messages:
