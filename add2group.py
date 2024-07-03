@@ -111,14 +111,16 @@ def add_members(client, target_group_entity, users, mode):
             print(gr + "[+] Waiting for 5-10 Seconds...")
             time.sleep(random.randint(5, 10))
         except PeerFloodError:
-            print(re + "[!] Getting Flood Error from Telegram. Script is stopping now. Please try again after some time.")
-            break
+            print(re + "[!] Getting Flood Error from Telegram. Retrying after some time.")
+            time.sleep(random.randint(10, 30))  # Adjust delay as needed
+            continue
         except UserPrivacyRestrictedError:
             print(re + "[!] User's privacy settings do not allow adding. Skipping.")
         except Exception:
             traceback.print_exc()
             print(re + "[!] Unexpected Error")
             continue
+
 
 def main():
     banner()
