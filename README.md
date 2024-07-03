@@ -1,4 +1,12 @@
-# How to use TeleBot
+# TeleBot
+A powerful Python-based Telegram bot for scraping group members, adding members to groups, and sending mass messages. This bot leverages the Telethon library to interact with Telegram's API.
+
+## Features
+- **Scrape Members**: Extract member information from Telegram groups and save it in a CSV file.
+- **Add Members**: Add members from a CSV file to another Telegram group.
+- **Send Mass Messages**: Send personalized messages to members listed in a CSV file.
+
+# Usage
 
 ## Install Dependency
 ```
@@ -46,6 +54,9 @@ python add2group.py members.csv
 python smsbot.py members.csv
 ```
 - Follow the prompts to select the messaging mode (by user ID or username) and enter your message.
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
 
 ### Disclaimer
 > Don't use this script on your main account, adviced to use an alt account because of bans and restrictions.

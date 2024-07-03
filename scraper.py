@@ -2,6 +2,8 @@
 from telethon.sync import TelegramClient
 from telethon.tl.functions.messages import GetDialogsRequest
 from telethon.tl.types import InputPeerEmpty
+from telethon.tl.types import InputPeerChannel
+
 import configparser
 import csv
 import os
@@ -13,9 +15,9 @@ cy = "\033[1;36m"
 
 def banner():
     print(f"""
-{re}╔╦╗{cy}┌─┐┬  ┌─┐{re}╔═╗  ╔═╗{cy}┌─┐┬─┐┌─┐┌─┐┌─┐┬─┐
-{re} ║ {cy}├┤ │  ├┤ {re}║ ╦  ╚═╗{cy}│  ├┬┘├─┤├─┘├┤ ├┬┘
-{re} ╩ {cy}└─┘┴─┘└─┘{re}╚═╝  ╚═╝{cy}└─┘┴└─┴ ┴┴  └─┘┴└─
+{re}╔╦╗{cy}┌─┐┬  ┌─┐   ╔═╗{cy}┌─┐┬─┐┌─┐┌─┐┌─┐┬─┐
+{re} ║ {cy}├┤ │  ├┤    ╚═╗{cy}│  ├┬┘├─┤├─┘├┤ ├┬┘
+{re} ╩ {cy}└─┘┴─┘└─┘   ╚═╝{cy}└─┘┴└─┴ ┴┴  └─┘┴└─
     """)
 
 def load_config():
