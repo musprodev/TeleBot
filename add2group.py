@@ -124,9 +124,14 @@ def main():
     banner()
     api_id, api_hash, phone = load_config()
     client = connect_client(api_id, api_hash, phone)
+    
+    if len(sys.argv) != 2:
+        print(re + "[!] Usage: python3 add2group.py <input_file>")
+        sys.exit(1)
 
     input_file = sys.argv[1]
     users = load_users(input_file)
+    
 
     groups = get_groups(client)
     target_group = select_group(groups)
