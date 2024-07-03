@@ -8,7 +8,7 @@ A powerful Python-based Telegram bot for scraping group members, adding members 
 
 # Usage
 
-## Install Dependency
+## Install Dependencies
 ```
 pip install telethon
 ```
