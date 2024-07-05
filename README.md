@@ -57,7 +57,7 @@ python smsbot.py members.csv
 - Follow the prompts to select the messaging mode (by user ID or username) and enter your message.
 
 ## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request.
+Contributions are welcomed! Please fork the repository and submit a pull request.
 
 ### Disclaimer
 > Don't use this script on your main account, adviced to use an alt account because of bans and restrictions.
